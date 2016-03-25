@@ -17,17 +17,25 @@ $ npm install --global gulp-cli
 ```
 
 
-## Install project dependencies
+#### Install project dependencies
 To run sass and other gulp tasks install the development depencencies.
 
 ```sh
 $ npm install
 ```
 
-## Run gulp:
+#### Run gulp:
 
 ```sh
 $ gulp
 ```
 
 To run individual tasks, use `gulp <task> <othertask>`.
+
+
+## Daily workflow
+
+Run gulp to compile sass and watch for changes.
+```sh
+$ gulp
+```

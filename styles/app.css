@@ -1,10 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300italic,400,600);
 body {
   background-color: #FFFFFF;
   color: #001A27;
   line-height: 1.5;
   width: 414px;
   margin: 0 auto;
-  font-family: Helvetica, 'Helvetica Neue', Lato, sans-serif; }
+  font-family: 'Raleway', sans-serif, Lato, sans-serif; }
 
 h1,
 h2,

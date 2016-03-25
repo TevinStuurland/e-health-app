@@ -41,7 +41,7 @@ To run individual tasks, use `gulp <task> <othertask>`.
 #### Pull the latest changes from git
 
 ```sh
-git pull
+$ git pull
 ```
 
 #### Gulp
@@ -69,10 +69,10 @@ Write commit messages in the *imperative* tense.
 
 ```sh
 # Good (imperative)
-git commit -m 'update the typography css' 
+$ git commit -m 'update the typography css' 
 
 # Bad (past)
-git commit -m 'updated the typography css' 
+$ git commit -m 'updated the typography css' 
 
 ```
 
@@ -85,8 +85,17 @@ Writing good git messages: http://chris.beams.io/posts/git-commit/
 
 ```sh
 # Git push <remote> <branch>
-git push origin master
+$ git push origin master
 
 # or for short
-git push
+$ git push
+```
+
+
+## Updating gh-pages (http://tevinstuurland.github.io/e-health-app/)
+
+From the project root run the followling command to easily update the gh-pages branch to the latest version of the ./app folder.
+
+```sh
+$ git subtree push --prefix app origin gh-pages
 ```

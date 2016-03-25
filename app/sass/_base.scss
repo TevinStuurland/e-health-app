@@ -29,6 +29,10 @@ p {
     font-weight: 300;
 }
 
+a{
+	text-decoration: none;	
+}
+
 /*------------------------------------*\
     #LOADING PAGE
 \*------------------------------------*/
@@ -41,8 +45,9 @@ section.loading{
 	}
 
 	h1{
-		color: $highlight;
 		font-size: 21px;
+		font-weight: 600;
+		color: $highlight;
 		text-transform: uppercase;
 	}
 }

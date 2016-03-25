@@ -35,7 +35,7 @@ To run individual tasks, use `gulp <task> <othertask>`.
 
 ## Daily workflow
 
-*Workflow: pull > gulp > add changes > commit > push*
+*Workflow: pull > gulp > make changes > add changes > commit > push*
 
 Run gulp from the project root to compile sass and watch for changes.
 ```sh
@@ -49,14 +49,15 @@ Work from the `./app` folder.
 ```sh
 $ git add . -A
 ```
-This adds everything you changed. the syntax is: `git add <file>` the `-A` flag means *everything* also newly created files without it newly created file **won't** be added.
+This adds everything you changed. the syntax is: `git add <file>` the `-A` flag means *everything*, also newly created files; without it newly created files **won't** be added.
 
 #### Commiting your files
 
 ```sh
 $ git commit -m 'your commit message'
 ```
-Write commit messages in the *imperative* tense. **Example:**
+Write commit messages in the *imperative* tense.  
+**Example:**
 
 ```sh
 # Good (imperative)
@@ -81,5 +82,3 @@ git push origin master
 # or for short
 git push
 ```
-
-

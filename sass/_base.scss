@@ -1,13 +1,20 @@
+/*------------------------------------*\
+    #GENERAL
+\*------------------------------------*/
+*{
+	box-sizing: border-box;
+}
 
 body {
     width: 414px;
+    height: 736px;
     margin: 0 auto;
+    font-size: 21px;
     line-height: 1.5;
-    box-sizing: border-box;
    	color: $text-important;
-    background-color: $background;
+   	border: 1px solid black;
+   	font-weight: 300;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
-
 }
 
 h1,
@@ -15,25 +22,69 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family:'Raleway', sans-serif, Lato, sans-serif;
-}
-
-h1{
-	font-size: 21px;
+h6, 
+p {
 	letter-spacing: 1px;
+    font-family:'Raleway', sans-serif, Lato, sans-serif;
+    font-weight: 300;
 }
 
-a{
-	color: $background;
+/*------------------------------------*\
+    #LOADING PAGE
+\*------------------------------------*/
+section.loading{
+	padding-top: 60%;
+	text-align: center;
+
+	img{
+		width: 4.190em;
+	}
+
+	h1{
+		color: $highlight;
+		font-size: 21px;
+		text-transform: uppercase;
+	}
+}
+
+/*------------------------------------*\
+    #ONBOARDING
+\*------------------------------------*/
+section{
+	text-align: center;
+
+	&.onboarding-text{
+		margin: 0 auto;
+		padding-top: 40%;
+
+		img{
+			width: 1.8em;
+		}
+
+		h1{
+			font-size: 1.3em;
+			letter-spacing: 1.4px;
+		}
+
+		p{
+			font-size: 1em;
+		}
+	}
+}
+
+footer{
+	bottom: 0;
+	width: 100%;
+	height: 92px;
+	padding-top: 30px;
+	margin-top: 8.02em;
+	text-align: center;
 	background-color: $highlight;
 
-	&.onboarding{
-	    width: 100%;
-	    height: 92px;
-	    display: block;
-	    font-size: 22px;
-	    padding-top: 30px;
-	    text-decoration: none;
+	a{	
+		font-weight: 600;
+		font-size: 1.05em;
+		color: $background;
+		text-decoration: none;
 	}
 }

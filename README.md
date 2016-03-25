@@ -44,6 +44,12 @@ $ gulp
 
 Work from the `./app` folder.
 
+#### Pull the latest changes from git.
+
+```sh
+git pull
+```
+
 #### Adding changes to git.
 
 ```sh
@@ -57,7 +63,6 @@ This adds everything you changed. the syntax is: `git add <file>` the `-A` flag 
 $ git commit -m 'your commit message'
 ```
 Write commit messages in the *imperative* tense.  
-**Example:**
 
 ```sh
 # Good (imperative)

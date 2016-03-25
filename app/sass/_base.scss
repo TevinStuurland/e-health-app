@@ -8,12 +8,12 @@
 body {
     width: 414px;
     height: 736px;
-    margin: 0 auto;
     font-size: 21px;
     line-height: 1.5;
+   	font-weight: 300;
    	color: $text-important;
    	border: 1px solid black;
-   	font-weight: 300;
+   	 margin: 50px auto 0 auto;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
 }
 

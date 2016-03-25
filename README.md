@@ -35,7 +35,7 @@ To run individual tasks, use `gulp <task> <othertask>`.
 
 ## Daily workflow
 
-Run gulp to compile sass and watch for changes.
+Run gulp to from the projects root compile sass and watch for changes.
 ```sh
 $ gulp
 ```

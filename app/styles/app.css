@@ -1,7 +1,10 @@
 body {
-  color: #000;
-  font-family: Helvetica, 'Helvetica Neue', Lato, sans-serif;
-  line-height: 1.5; }
+  background-color: #FFFFFF;
+  color: #001A27;
+  line-height: 1.5;
+  width: 414px;
+  margin: 0 auto;
+  font-family: Helvetica, 'Helvetica Neue', Lato, sans-serif; }
 
 h1,
 h2,

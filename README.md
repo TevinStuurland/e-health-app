@@ -37,20 +37,23 @@ To run individual tasks, use `gulp <task> <othertask>`.
 
 *Workflow: pull > gulp > make changes > add changes > commit > push*
 
-Run gulp from the project root to compile sass and watch for changes.
-```sh
-$ gulp
-```
 
-Work from the `./app` folder.
-
-#### Pull the latest changes from git.
+#### Pull the latest changes from git
 
 ```sh
 git pull
 ```
 
-#### Adding changes to git.
+#### Gulp
+Run gulp from the project root to compile sass and watch for changes.
+```sh
+$ gulp
+```
+
+#### Make changes
+Work from the `./app` folder.
+
+#### Adding changes to git
 
 ```sh
 $ git add . -A

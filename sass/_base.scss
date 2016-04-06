@@ -13,7 +13,7 @@ body {
    	font-weight: 300;
    	color: $text-important;
    	border: 1px solid black;
-   	 margin: 50px auto 0 auto;
+   	margin: 50px auto 0 auto;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
 }
 
@@ -95,7 +95,9 @@ section.loading{
     background: $highlight !important;
 }
 
-// #BUTTONS
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
 .btn{
     text-align: center;
     font-weight: 600;
@@ -126,7 +128,7 @@ section.loading{
 
     &.session{
         height: 59px;
-        width: 44%;
+        width: 45%;
         float: right;
         font-weight: 300;
         margin-right: 30px;
@@ -136,6 +138,20 @@ section.loading{
         color: $background;
         text-decoration: none;
         cursor: pointer;
+    }
+
+    &.session-home{
+        height: 59px;
+        width: 60%;
+        font-weight: 300;
+        padding-top: 14px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
     }
 
 }
@@ -248,4 +264,56 @@ input:focus ~ .highlight {
 
 .errorVisible{
     visibility: visible;
+}
+
+/*------------------------------------*\
+    #HOMEPAGE
+\*------------------------------------*/
+nav{
+    top: 0;
+    height: 65px;
+    width: 100%;
+    background-color: $highlight;
+
+    p{
+        padding:0;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: $background;
+        letter-spacing: 0.3px;
+        padding-left: 28.5px;
+        padding-top: 22px;
+    }
+
+    img{
+        width: 83px;
+        float: right;
+        margin-top: -43px;
+    }
+}
+
+section.home{
+    width: 414px;
+    height: 734px;
+    text-align: center;
+    padding-top: 40%;
+
+    h1{
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    p{
+        font-size: 1em;
+
+        b{
+            color: $highlight;
+        }
+    }
+
+    img{
+        width: 38px;
+    }
 }

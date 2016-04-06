@@ -42,20 +42,7 @@ section.loading {
     color: #FF4062;
     text-transform: uppercase; }
 
-/*------------------------------------*    #ONBOARDING
-\*------------------------------------*/
-section {
-  text-align: center; }
-  section.onboarding-text {
-    margin: 0 auto;
-    padding-top: 40%; }
-    section.onboarding-text h1 {
-      font-size: 1.3em;
-      letter-spacing: 1.4px; }
-    section.onboarding-text p {
-      font-size: 1em; }
-
-/*------------------------------------*    #SWIPER
+/*------------------------------------*    #ONBOARDING + SWIPER
 \*------------------------------------*/
 .swiper-container {
   width: 414px;
@@ -72,22 +59,6 @@ section {
   .swiper-container img {
     width: 38px; }
 
-.btn {
-  height: 92px;
-  padding-top: 30px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.05em; }
-  .btn.next {
-    width: 100%;
-    background-color: #FF4062;
-    color: #FFFFFF;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    margin-top: 477px;
-    z-index: 1000; }
-
 .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 663px !important; }
 
@@ -100,6 +71,42 @@ section {
 
 .swiper-pagination-bullet-active {
   background: #FF4062 !important; }
+
+.btn {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05em; }
+  .btn.next {
+    height: 92px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 477px;
+    z-index: 1000; }
+  .btn.later {
+    height: 59px;
+    width: 50%;
+    margin-top: 42px;
+    padding-top: 14px;
+    color: #939393;
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.session {
+    height: 59px;
+    width: 44%;
+    float: right;
+    font-weight: 300;
+    margin-right: 30px;
+    margin-top: -59px;
+    padding-top: 14px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer; }
 
 /*------------------------------------*    #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
 \*------------------------------------*/

@@ -13,7 +13,7 @@
     <body>
         <!-- Slider main container -->
         <div class="swiper-container">
-        <div class="btn next">Next</div>
+
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
             <!-- Additional required wrapper -->
@@ -23,6 +23,7 @@
                     <img src="../images/logo.png" alt="Buddy">
                     <h1>Welcome!</h1>
                     <p>Feedback will help you get control over your own body by using the e-sensor device Feedback to monitor your body and train you to control your stress.</p>
+                    <div class="btn next">Next</div>
                 </div>
                 <div class="swiper-slide">
                     <h1>Create your profile</h1>
@@ -34,17 +35,19 @@
                       <label>Your Name</label>
                       <div class="error">Please enter your name</div>
                     </div>
+                    <div class="btn next">Next</div>
                 </div>
                 <div class="swiper-slide">
                     <img src="../images/connection.png" alt="Connection">
                     <h1>Connection Icon</h1>
                     <p>Click the icon on your <b>Feedback</b> device to start connecting and press next to continue.</p>
+                    <div class="btn next">Next</div>
                 </div>
 
                 <div class="swiper-slide">
                     <p> Do you want to begin with a <br>session?</p>
                     <a href="home.html"><div class="btn later">Later</div></a>
-                    <a href="session/session.html"><div class="btn session">Start a session</div></a>
+                    <a href="session-onboarding.html"><div class="btn session">Start a session</div></a>
                 </div>
                 ...
             </div>
@@ -52,7 +55,7 @@
 
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
        <script type="text/javascript">
             var activeIndex = null;
               var mySwiper = new Swiper ('.swiper-container', {

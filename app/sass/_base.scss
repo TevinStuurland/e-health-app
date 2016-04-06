@@ -112,7 +112,7 @@ section.loading{
         text-decoration: none;
         cursor: pointer;
         position: absolute;
-        margin-top: 477px;
+        bottom: 0;
         z-index: 1000;
     }
 
@@ -309,11 +309,42 @@ section.home{
         font-size: 1em;
 
         b{
-            color: $highlight;
+          color: $highlight;
         }
     }
 
     img{
         width: 38px;
+    }
+}
+
+.before-session{
+    padding-top: 20%;
+
+    img{
+        margin: 75px 0 35px 0;
+        width: 209px;
+
+        &.fingers{
+          width: 281px;
+        }
+
+        &.arrow{
+          position: absolute;
+          width: 20px;
+
+          &.slide1{
+            margin: 250px 0 0 -70px;
+          }
+
+          &.slide2{
+            margin: 40px 0 0 -270px;
+          }
+        }
+    }
+
+    h2{
+        font-size: 18px;
+        font-weight: 600;
     }
 }

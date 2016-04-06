@@ -75,8 +75,12 @@
                     }
               });
 
+
+              var nextButton = document.querySelector('.btn.next');
               var inputField = document.querySelector('.account');
               var errorElement = document.querySelector('.error');
+              inputField.addEventListener('change', checkForErrors);
+              nextButton.addEventListener('click', checkForErrors);
 
               inputField.addEventListener('change', function() {
                 // "this" is het input veld.
@@ -92,6 +96,19 @@
                         console.log('We good...');
                     }
               });
+              var checkForErrors = function() {
+                if (inputField.value === '' && activeIndex === 1) {
+                    // Input is leeg. Lock the slide.
+                    errorElement.classList.add('errorVisible');
+                    mySwiper.lockSwipeToNext();
+                    console.log('Lock it...');
+                } else {
+                    // Er is input.
+                    mySwiper.unlockSwipeToNext();
+                    errorElement.classList.remove('errorVisible');
+                    console.log('We good...');
+                }
+              };
 
               </script>
     </body>

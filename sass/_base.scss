@@ -53,28 +53,7 @@ section.loading{
 }
 
 /*------------------------------------*\
-    #ONBOARDING
-\*------------------------------------*/
-section{
-	text-align: center;
-
-	&.onboarding-text{
-		margin: 0 auto;
-		padding-top: 40%;
-
-		h1{
-			font-size: 1.3em;
-			letter-spacing: 1.4px;
-		}
-
-		p{
-			font-size: 1em;
-		}
-	}
-}
-
-/*------------------------------------*\
-    #SWIPER
+    #ONBOARDING + SWIPER
 \*------------------------------------*/
 .swiper-container {
     width: 414px;
@@ -98,29 +77,6 @@ section{
     img{
         width: 38px;
     }
-
-
-}
-
-.btn{
-
-    height: 92px;
-    padding-top: 30px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.05em;
-
-    &.next{
-        width: 100%;
-        background-color: $highlight;
-        color: $background;
-        text-decoration: none;
-        cursor: pointer;
-        position: absolute;
-        margin-top: 477px;
-        z-index: 1000;
-    }
-
 }
 
 .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -138,6 +94,52 @@ section{
 .swiper-pagination-bullet-active{
     background: $highlight !important;
 }
+
+// #BUTTONS
+.btn{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05em;
+
+    &.next{
+        height: 92px;
+        width: 100%;
+        padding-top: 30px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 477px;
+        z-index: 1000;
+    }
+
+    &.later{
+        height: 59px;
+        width: 50%;
+        margin-top: 42px;
+        padding-top: 14px;
+        color: lighten($text , 40%);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &.session{
+        height: 59px;
+        width: 44%;
+        float: right;
+        font-weight: 300;
+        margin-right: 30px;
+        margin-top: -59px;
+        padding-top: 14px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
+
 /*------------------------------------*\
     #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
 \*------------------------------------*/

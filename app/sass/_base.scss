@@ -22,7 +22,7 @@ h2,
 h3,
 h4,
 h5,
-h6, 
+h6,
 p {
 	letter-spacing: 1px;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
@@ -30,7 +30,7 @@ p {
 }
 
 a{
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 /*------------------------------------*\
@@ -41,7 +41,7 @@ section.loading{
 	text-align: center;
 
 	img{
-		width: 4.190em;
+		width: 62px;
 	}
 
 	h1{
@@ -62,10 +62,6 @@ section{
 		margin: 0 auto;
 		padding-top: 40%;
 
-		img{
-			width: 1.8em;
-		}
-
 		h1{
 			font-size: 1.3em;
 			letter-spacing: 1.4px;
@@ -77,19 +73,168 @@ section{
 	}
 }
 
-footer{
-	bottom: 0;
-	width: 100%;
-	height: 92px;
-	padding-top: 30px;
-	margin-top: 8.02em;
-	text-align: center;
-	background-color: $highlight;
+/*------------------------------------*\
+    #SWIPER
+\*------------------------------------*/
+.swiper-container {
+    width: 414px;
+    height: 734px;
+    text-align: center;
+    padding-top: 40%;
 
-	a{	
-		font-weight: 600;
-		font-size: 1.05em;
-		color: $background;
-		text-decoration: none;
-	}
+    h1{
+        font-size: 1.3em;
+        letter-spacing: 1.4px;
+    }
+
+    p{
+        font-size: 1em;
+
+        b{
+            color: $highlight;
+        }
+    }
+
+    img{
+        width: 38px;
+    }
+
+
+}
+
+.btn{
+
+    height: 92px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05em;
+
+    &.next{
+        width: 100%;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 477px;
+        z-index: 1000;
+    }
+
+}
+
+.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 663px !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 12px!important;
+}
+
+.swiper-pagination-bullet{
+    width: 10px !important;
+    height: 10px !important;
+}
+.swiper-pagination-bullet-active{
+    background: $highlight !important;
+}
+/*------------------------------------*\
+    #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
+\*------------------------------------*/
+
+/* form starting stylings ------------------------------- */
+.group            {
+  position:relative;
+  margin: 70px auto 45px auto;
+  width: 300px;
+}
+
+input               {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:2px solid lighten($text, 70%);
+}
+
+input:focus         { outline:none; }
+
+/* LABEL ======================================= */
+label                {
+  color:lighten($text, 70%);
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label        {
+  top:-20px;
+  font-size:14px;
+  color: $highlight;
+}
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; width:300px; }
+
+.bar:before, .bar:after     {
+  content:'';
+  height:3px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background: $highlight;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:$highlight; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:$highlight; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:$highlight; }
+  to    { width:0; background:transparent; }
 }

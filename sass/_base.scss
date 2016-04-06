@@ -242,3 +242,10 @@ input:focus ~ .highlight {
 }
 
 // #FORM-ERROR
+.error{
+    visibility: hidden;
+}
+
+.errorVisible{
+    visibility: visible;
+}

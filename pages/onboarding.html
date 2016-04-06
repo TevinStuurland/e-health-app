@@ -78,7 +78,7 @@
               var inputField = document.querySelector('.account');
               var errorElement = document.querySelector('.error');
 
-              inputField.addEventListener('keyup', function() {
+              inputField.addEventListener('change', function() {
                 // "this" is het input veld.
                 if (this.value === '' && activeIndex === 1) {
                         // Input is leeg. Lock the slide.

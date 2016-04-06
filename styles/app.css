@@ -210,3 +210,9 @@ input:focus ~ .highlight {
   to {
     width: 0;
     background: transparent; } }
+
+.error {
+  visibility: hidden; }
+
+.errorVisible {
+  visibility: visible; }

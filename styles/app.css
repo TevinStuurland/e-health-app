@@ -87,7 +87,7 @@ section.loading {
     text-decoration: none;
     cursor: pointer;
     position: absolute;
-    margin-top: 477px;
+    bottom: 0;
     z-index: 1000; }
   .btn.later {
     height: 59px;
@@ -267,3 +267,21 @@ section.home {
       color: #FF4062; }
   section.home img {
     width: 38px; }
+
+.before-session {
+  padding-top: 20%; }
+  .before-session img {
+    margin: 75px 0 35px 0;
+    width: 209px; }
+    .before-session img.fingers {
+      width: 281px; }
+    .before-session img.arrow {
+      position: absolute;
+      width: 20px; }
+      .before-session img.arrow.slide1 {
+        margin: 250px 0 0 -70px; }
+      .before-session img.arrow.slide2 {
+        margin: 40px 0 0 -270px; }
+  .before-session h2 {
+    font-size: 18px;
+    font-weight: 600; }

@@ -3,24 +3,67 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>FEEDBACK - Step 1</title>
+        <title>FEEDBACK - Before you start</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../styles/app.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     </head>
     <body>
-        <section class="onboarding-text">
-            <img src="../images/logo.png" alt="Buddy">
-            <h1>Welcome!</h1>
-            <p>Feedback will help you get control over your own body by using the e-sensor device Feedback to monitor your body and train you to control your stress.</p>
-        </section>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+        <div class="btn next">Next</div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="../images/logo.png" alt="Buddy">
+                    <h1>Welcome!</h1>
+                    <p>Feedback will help you get control over your own body by using the e-sensor device Feedback to monitor your body and train you to control your stress.</p>
+                </div>
+                <div class="swiper-slide">
+                    <h1>Create your profile</h1>
+                    <form>
+                    <div class="group">
+                      <input type="text" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Your Name</label>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/connection.png" alt="Connection">
+                    <h1>Connection Icon</h1>
+                    <p>Click the icon on your <b>Feedback</b> device to start connecting and press next to continue.</p>
+                </div>
 
-        <footer>
-            <a href="onboarding-profile.html">Next</a>
-        </footer>
+                <div class="swiper-slide">
+                    <h1> Do you want to begin with a session?</h1>
+                    <a href="home.html">Later</a><div class="btn"><a href="session/session-start.html">Start a session</a></div>
+                </div>
+                ...
+            </div>
+
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+        <script type="text/javascript">
+              var mySwiper = new Swiper ('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: false,
+
+                // If we need pagination
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                nextButton: '.next'
+              })
+              </script>
+            </body>
+        </script>
     </body>
 </html>

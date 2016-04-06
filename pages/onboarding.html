@@ -28,7 +28,7 @@
                     <h1>Create your profile</h1>
                     <form>
                     <div class="group">
-                      <input type="text" required>
+                      <input class="account" type="text" required>
                       <span class="highlight"></span>
                       <span class="bar"></span>
                       <label>Your Name</label>
@@ -53,6 +53,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
         <script type="text/javascript">
+            var activeIndex = null;
               var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
@@ -62,9 +63,33 @@
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
                 nextButton: '.next'
-              })
-              </script>
-            </body>
-        </script>
+              });
+
+
+              mySwiper.on('onSlideChangeStart', function(swiper) {
+                    activeIndex = swiper.activeIndex;
+                    if (activeIndex === 1) {
+                        mySwiper.lockSwipeToNext()
+                    } else if (activeIndex < 1) {
+                        mySwiper.unlockSwipeToNext();
+                    }
+              });
+
+              // !!! geef het input field van de naam een unieke classe vervang dan .swiper-slide input[type="text"] met die class.
+              var inputField = document.querySelector('.account');
+
+              inputField.addEventListener('keyup', function() {
+                // "this" is het input veld.
+                if (this.value === '' && activeIndex === 1) {
+                        // Input is leeg. Lock the slide.
+                        mySwiper.lockSwipeToNext();
+                        console.log('Lock it...');
+                    } else {
+                        // Er is input.
+                        mySwiper.unlockSwipeToNext();
+                        console.log('We good...');
+                    }
+              });
+            </script>
     </body>
 </html>

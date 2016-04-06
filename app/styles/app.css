@@ -72,6 +72,8 @@ section.loading {
 .swiper-pagination-bullet-active {
   background: #FF4062 !important; }
 
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
 .btn {
   text-align: center;
   font-weight: 600;
@@ -97,7 +99,7 @@ section.loading {
     cursor: pointer; }
   .btn.session {
     height: 59px;
-    width: 44%;
+    width: 45%;
     float: right;
     font-weight: 300;
     margin-right: 30px;
@@ -107,6 +109,18 @@ section.loading {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer; }
+  .btn.session-home {
+    height: 59px;
+    width: 60%;
+    font-weight: 300;
+    padding-top: 14px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
 
 /*------------------------------------*    #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
 \*------------------------------------*/
@@ -216,3 +230,40 @@ input:focus ~ .highlight {
 
 .errorVisible {
   visibility: visible; }
+
+/*------------------------------------*    #HOMEPAGE
+\*------------------------------------*/
+nav {
+  top: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #FF4062; }
+  nav p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 0.3px;
+    padding-left: 28.5px;
+    padding-top: 22px; }
+  nav img {
+    width: 83px;
+    float: right;
+    margin-top: -43px; }
+
+section.home {
+  width: 414px;
+  height: 734px;
+  text-align: center;
+  padding-top: 40%; }
+  section.home h1 {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    font-weight: 300; }
+  section.home p {
+    font-size: 1em; }
+    section.home p b {
+      color: #FF4062; }
+  section.home img {
+    width: 38px; }

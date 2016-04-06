@@ -32,6 +32,7 @@
                       <span class="highlight"></span>
                       <span class="bar"></span>
                       <label>Your Name</label>
+                      <div class="error">Please enter your name</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -52,7 +53,7 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-        <script type="text/javascript">
+       <script type="text/javascript">
             var activeIndex = null;
               var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
@@ -65,7 +66,6 @@
                 nextButton: '.next'
               });
 
-
               mySwiper.on('onSlideChangeStart', function(swiper) {
                     activeIndex = swiper.activeIndex;
                     if (activeIndex === 1) {
@@ -75,21 +75,24 @@
                     }
               });
 
-              // !!! geef het input field van de naam een unieke classe vervang dan .swiper-slide input[type="text"] met die class.
               var inputField = document.querySelector('.account');
+              var errorElement = document.querySelector('.error');
 
               inputField.addEventListener('keyup', function() {
                 // "this" is het input veld.
                 if (this.value === '' && activeIndex === 1) {
                         // Input is leeg. Lock the slide.
+                        errorElement.classList.add('errorVisible');
                         mySwiper.lockSwipeToNext();
                         console.log('Lock it...');
                     } else {
                         // Er is input.
                         mySwiper.unlockSwipeToNext();
+                        errorElement.classList.remove('errorVisible');
                         console.log('We good...');
                     }
               });
-            </script>
+
+              </script>
     </body>
 </html>

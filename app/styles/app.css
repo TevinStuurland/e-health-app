@@ -97,6 +97,14 @@ section.loading {
     color: #939393;
     text-decoration: none;
     cursor: pointer; }
+  .btn.later2 {
+    height: 59px;
+    width: 50%;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #939393;
+    text-decoration: none;
+    cursor: pointer; }
   .btn.session {
     height: 59px;
     width: 45%;
@@ -105,6 +113,16 @@ section.loading {
     margin-right: 30px;
     margin-top: -59px;
     padding-top: 14px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer; }
+  .btn.session2 {
+    height: 59px;
+    width: 70%;
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 17px;
     background-color: #FF4062;
     color: #FFFFFF;
     text-decoration: none;
@@ -133,6 +151,18 @@ section.loading {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px; }
+  .btn.settings {
+    height: 59px;
+    width: 60%;
+    font-weight: 600;
+    padding-top: 14px;
+    background-color: #FFFFFF;
+    color: #FF4062;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px; }
 
 /*------------------------------------*    #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
 \*------------------------------------*/
@@ -272,6 +302,18 @@ nav {
     float: right;
     margin-top: -43px; }
 
+.settings {
+  top: 0;
+  height: 340px;
+  width: 100%;
+  background-color: #FF4062; }
+  .settings .buddy {
+    width: 88px;
+    margin: 40px 120px 0px 50px; }
+  .settings .wifi {
+    width: 72px;
+    margin: -106px 110px 0px 50px; }
+
 section.home {
   width: 414px;
   height: 734px;
@@ -369,3 +411,123 @@ section.home {
 
 /*------------------------------------*    #SESSION-HOME
 \*------------------------------------*/
+section.home-session {
+  width: 414px;
+  height: 734px;
+  text-align: left;
+  padding-top: 5%; }
+  section.home-session ul {
+    list-style: none;
+    font-weight: 300;
+    margin-top: -20px; }
+    section.home-session ul li:nth-child(1n+2) {
+      padding-top: 100px; }
+    section.home-session ul li p {
+      float: right;
+      margin: 0;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-weight: 300;
+      font-size: 14px;
+      lighten: #2D2D2D, 20%; }
+  section.home-session a {
+    color: #001A27; }
+    section.home-session a li:nth-child(odd) {
+      padding-top: 50px; }
+  section.home-session #session-summary, section.home-session #session-summary2, section.home-session #session-summary3 {
+    display: none; }
+    section.home-session #session-summary p.duration, section.home-session #session-summary2 p.duration, section.home-session #session-summary3 p.duration {
+      float: right;
+      margin: 0;
+      margin-right: 15px;
+      margin-top: 5px;
+      font-weight: 300;
+      font-size: 14px;
+      lighten: #2D2D2D, 20%; }
+    section.home-session #session-summary img, section.home-session #session-summary2 img, section.home-session #session-summary3 img {
+      max-width: 90%; }
+
+/*------------------------------------*    #MODAL
+\*------------------------------------*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* Modal Content */
+.modal-content {
+  height: 300px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 300px;
+  padding: 35px;
+  border: 1px solid #888;
+  width: 28%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+#myBtn {
+  margin-left: 55px;
+  font-weight: 600;
+  color: #FF4062;
+  cursor: pointer; }

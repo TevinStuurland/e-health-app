@@ -247,6 +247,8 @@ nav {
     letter-spacing: 0.3px;
     padding-left: 28.5px;
     padding-top: 22px; }
+    nav p.backtohome {
+      padding-left: 60px; }
   nav img {
     width: 83px;
     float: right;
@@ -285,3 +287,29 @@ section.home {
   .before-session h2 {
     font-size: 18px;
     font-weight: 600; }
+
+/*------------------------------------*    #VIDEO-BLOOB
+\*------------------------------------*/
+.videowrap {
+  overflow: hidden;
+  width: 412px;
+  height: 402px; }
+  .videowrap video {
+    margin-left: -190px;
+    margin-top: -21px; }
+
+.videocontrols {
+  z-index: 100;
+  position: absolute;
+  margin-left: 143px;
+  margin-top: 190px; }
+  .videocontrols a {
+    color: #FFFFFF; }
+
+/*------------------------------------*    #FONTAWESOME
+\*------------------------------------*/
+.fa {
+  position: absolute;
+  padding-top: 21px;
+  color: #FFFFFF;
+  margin-left: 21px; }

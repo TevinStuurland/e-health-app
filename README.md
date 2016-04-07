@@ -1,5 +1,6 @@
-# FEEDBACK
-A E-health app for a HvA school project.
+# [FEEDBACK](https://tevinstuurland.github.io/e-health-app)
+A E-health app for a HvA school project.  
+https://tevinstuurland.github.io/e-health-app
 
 ## Getting Started (one time setup)
 

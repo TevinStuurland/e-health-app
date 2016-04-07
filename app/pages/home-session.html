@@ -8,15 +8,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../styles/app.css">
 
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     </head>
     <body>
-        <nav><p>User Name</p> <img src="../images/settings.png" alt="settings button"></nav>
+        <nav><p>User Name</p> <a href="settings.html"><img src="../images/settings.png" alt="settings button"></a></nav>
         <section class="home-session">
            <ul>
-               <li>Session 1</li>
-               <li>Session 2</li>
-               <li>Session 3</li>
+                <a id="session" href="#"><li>Session 1 <p>2 march</p></li></a>
+                <div id="session-summary">
+                    <p class="duration">Duration: 10 minutes</p>
+                    <img src="../images/session/chart.png" alt="Results training">
+                </div>
+
+                <a id="session2" href="#"><li>Session 2 <p>4 march</p></li></a>
+                <div id="session-summary2">
+                    <p class="duration">Duration: 2 minutes</p>
+                    <img src="../images/session/chart.png" alt="Results training">
+                </div>
+
+                <a id="session3" href="#"><li>Session 3 <p>5 march</p></li></a>
+                <div id="session-summary3">
+                    <p class="duration">Duration: 5 minutes</p>
+                    <img src="../images/session/chart.png" alt="Results training">
+                </div>
            </ul>
         </section>
+
+
+        <script type="text/javascript">
+            $( "#session" ).click(function() {
+            $( "#session-summary" ).slideToggle();
+            });
+
+            $( "#session2" ).click(function() {
+            $( "#session-summary2" ).slideToggle();
+            });
+
+            $( "#session3" ).click(function() {
+            $( "#session-summary3" ).slideToggle();
+            });
+        </script>
+
     </body>
 </html>

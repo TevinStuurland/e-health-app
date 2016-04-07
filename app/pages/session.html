@@ -20,7 +20,7 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide in-session-one">
-                    <nav><a href="home.html"><i class="fa fa-chevron-left"></i></a><p class="backtohome">User Name</p> <img src="../images/settings.png" alt="settings button"></nav>
+                    <nav><a href="home.html"><i class="fa fa-chevron-left"></i></a><p class="backtohome">User Name</p> <a href="settings.html"><img src="../images/settings.png" alt="settings button"></a></nav>
                 </div>
 
                 <div class="swiper-slide in-session-two">
@@ -32,13 +32,11 @@
         </div>
 
         <div class="videocontrols" >
-            <a id="play" onclick="playVid()" href="#">Press to continue</a>
-            <br/>
-            <a id="pause" onclick="pauseVid()" href="#">Press to stop</a>
+            <a id="pause" href="session-pause.html">Press to stop</a>
         </div>
 
         <div class="videowrap">
-            <video id="bloob" width="790" autoplay loop>
+            <video id="bloob" width="790" height="800;" autoplay loop onclick="playPause()">
                 <source src="../images/session/therapy/bloob.mp4" type="video/mp4">
                 <source src="../images/session/therapy/bloob.ogg" type="video/ogg">
                 Your browser does not support HTML5 video.
@@ -46,25 +44,12 @@
         </div>
 
 
-        <script>
-            var vid = document.getElementById("bloob");
-
-            function playVid() {
-                vid.play();
-            }
-
-            function pauseVid() {
-                vid.pause();
-            }
-
-        </script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
         <script>
           var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
             direction: 'vertical',
-            autoplay: 10000,
+            autoplay: 5000,
             autoplayStopOnLast: true,
           })
         </script>

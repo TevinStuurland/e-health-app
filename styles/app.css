@@ -99,12 +99,22 @@ section.loading {
     cursor: pointer; }
   .btn.later2 {
     height: 59px;
-    width: 50%;
-    margin-top: 16px;
+    width: 30%;
     font-size: 18px;
     color: #939393;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-top: 14px; }
+  .btn.later3 {
+    height: 59px;
+    width: 30%;
+    font-size: 18px;
+    color: #939393;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 14px;
+    position: absolute;
+    margin-left: -370px; }
   .btn.session {
     height: 59px;
     width: 45%;
@@ -119,8 +129,21 @@ section.loading {
     cursor: pointer; }
   .btn.session2 {
     height: 59px;
-    width: 70%;
+    width: 65%;
     font-weight: 300;
+    float: right;
+    font-size: 18px;
+    padding-top: 17px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -60px; }
+  .btn.session3 {
+    height: 59px;
+    width: 65%;
+    font-weight: 300;
+    float: right;
     font-size: 18px;
     padding-top: 17px;
     background-color: #FF4062;
@@ -377,6 +400,18 @@ section.home {
     font-size: 12px;
     padding-top: 570px; }
 
+.in-session-pause {
+  padding-top: 0;
+  text-align: center; }
+  .in-session-pause .fa {
+    position: relative;
+    padding-top: 21px;
+    color: #FFFFFF;
+    float: left; }
+  .in-session-pause .time-indication {
+    font-weight: 300;
+    font-size: 12px; }
+
 /*------------------------------------*    #VIDEO-BLOOB
 \*------------------------------------*/
 .videowrap {
@@ -387,7 +422,16 @@ section.home {
   margin-top: -580px; }
   .videowrap video {
     margin-left: -190px;
-    margin-top: -21px; }
+    margin-top: -199px; }
+
+.videowrap-img {
+  overflow: hidden;
+  width: 412px;
+  height: 402px;
+  margin-top: 120px;
+  margin-left: 17px; }
+  .videowrap-img img {
+    width: 380px; }
 
 .videocontrols {
   z-index: 100;
@@ -399,6 +443,18 @@ section.home {
   margin-top: -400px;
   text-align: center; }
   .videocontrols a {
+    color: #FFFFFF; }
+
+.videocontrols-img {
+  margin-top: 290px;
+  z-index: 100;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .videocontrols-img a {
     color: #FFFFFF; }
 
 /*------------------------------------*    #FONTAWESOME
@@ -451,8 +507,6 @@ section.home-session {
 \*------------------------------------*/
 /* The Modal (background) */
 .modal {
-  display: none;
-  /* Hidden by default */
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -530,4 +584,33 @@ section.home-session {
   margin-left: 55px;
   font-weight: 600;
   color: #FF4062;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 160px;
+  display: block; }
+
+#myBtn2 {
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  color: #FF4062;
+  margin-left: 55px;
+  margin-top: 20px; }
+
+#myBtn2-off {
+  display: block;
+  font-weight: 600;
+  color: #adadad;
+  margin-left: 55px;
+  margin-top: 20px; }
+
+.settings-on {
+  text-align: center;
+  height: 59px;
+  width: 60%;
+  font-weight: 600;
+  padding-top: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px; }

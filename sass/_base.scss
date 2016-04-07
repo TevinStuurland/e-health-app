@@ -128,12 +128,24 @@ section.loading{
 
     &.later2{
         height: 59px;
-        width: 50%;
-        margin-top: 16px;
+        width: 30%;
         font-size: 18px;
         color: lighten($text , 40%);
         text-decoration: none;
         cursor: pointer;
+        padding-top: 14px;
+    }
+
+    &.later3{
+        height: 59px;
+        width: 30%;
+        font-size: 18px;
+        color: lighten($text , 40%);
+        text-decoration: none;
+        cursor: pointer;
+        padding-top: 14px;
+        position: absolute;
+        margin-left: -370px;
     }
 
     &.session{
@@ -151,15 +163,30 @@ section.loading{
     }
 
     &.session2{
-      height: 59px;
-      width: 70%;
-      font-weight: 300;
-      font-size: 18px;
-      padding-top: 17px;
-      background-color: $highlight;
-      color: $background;
-      text-decoration: none;
-      cursor: pointer;
+        height: 59px;
+        width: 65%;
+        font-weight: 300;
+        float: right;
+        font-size: 18px;
+        padding-top: 17px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: -60px;
+      }
+
+      &.session3{
+        height: 59px;
+        width: 65%;
+        font-weight: 300;
+        float: right;
+        font-size: 18px;
+        padding-top: 17px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
       }
 
     &.session-home{
@@ -467,6 +494,23 @@ section.home{
   }
 }
 
+.in-session-pause{
+  padding-top: 0;
+  text-align: center;
+
+  .fa{
+    position: relative;
+    padding-top: 21px;
+    color: $background;
+    float: left;
+  }
+
+  .time-indication{
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
 /*------------------------------------*\
     #VIDEO-BLOOB
 \*------------------------------------*/
@@ -479,7 +523,19 @@ section.home{
 
   video{
     margin-left: -190px;
-    margin-top: -21px;
+    margin-top: -199px;
+  }
+}
+
+.videowrap-img{
+  overflow: hidden;
+  width: 412px;
+  height: 402px;
+  margin-top: 120px;
+  margin-left: 17px;
+
+  img{
+    width: 380px;
   }
 }
 
@@ -496,16 +552,22 @@ section.home{
   a{
     color: $background;
   }
-
-  #play{
-
-  }
-
-  #pause{
-
-  }
 }
 
+.videocontrols-img{
+  margin-top: 290px;
+  z-index: 100;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  a{
+    color: $background;
+  }
+}
 /*------------------------------------*\
     #FONTAWESOME
 \*------------------------------------*/
@@ -579,7 +641,6 @@ section.home-session{
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -648,4 +709,36 @@ section.home-session{
   font-weight: 600;
   color: $highlight;
   cursor: pointer;
+  margin-top: 160px;
+  display: block;
+}
+
+#myBtn2{
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  color: $highlight;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+#myBtn2-off{
+  display: block;
+  font-weight: 600;
+  color: lighten($text, 50%);
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.settings-on{
+  text-align: center;
+  height: 59px;
+  width: 60%;
+  font-weight: 600;
+  padding-top: 14px;
+  color: $background;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
 }

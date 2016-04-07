@@ -154,6 +154,20 @@ section.loading{
         margin-top: 50px;
     }
 
+    &.session-done{
+        height: 59px;
+        width: 60%;
+        font-weight: 300;
+        padding-top: 14px;
+        background-color: $highlight;
+        color: $background;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
 }
 
 /*------------------------------------*\
@@ -260,6 +274,12 @@ input:focus ~ .highlight {
 // #FORM-ERROR
 .error{
     visibility: hidden;
+    color: $highlight;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+    float: right;
+    text-transform: uppercase;
 }
 
 .errorVisible{
@@ -353,6 +373,47 @@ section.home{
     }
 }
 
+.in-session{
+  padding-top: 0;
+
+  nav{
+    z-index: 1;
+    p{
+        padding:0;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: $background;
+        letter-spacing: 0.3px;
+        padding-top: 22px;
+
+        &.backtohome{
+          float: left;
+          margin-left: 20px;
+        }
+    }
+
+    img{
+        width: 83px;
+        float: right;
+        margin: 0;
+    }
+  }
+
+  .fa{
+    position: relative;
+    padding-top: 21px;
+    color: $background;
+    float: left;
+  }
+
+  .time-indication{
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 570px;
+  }
+}
+
 /*------------------------------------*\
     #VIDEO-BLOOB
 \*------------------------------------*/
@@ -360,6 +421,8 @@ section.home{
   overflow: hidden;
   width: 412px;
   height: 402px;
+  position: absolute;
+  margin-top: -580px;
 
   video{
     margin-left: -190px;
@@ -370,11 +433,23 @@ section.home{
 .videocontrols{
   z-index: 100;
   position: absolute;
-  margin-left: 143px;
-  margin-top: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: -400px;
+  text-align: center;
 
   a{
     color: $background;
+  }
+
+  #play{
+
+  }
+
+  #pause{
+
   }
 }
 
@@ -387,3 +462,7 @@ section.home{
   color: $background;
   margin-left: 21px;
 }
+
+/*------------------------------------*\
+    #SESSION-HOME
+\*------------------------------------*/

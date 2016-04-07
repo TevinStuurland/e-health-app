@@ -121,6 +121,18 @@ section.loading {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px; }
+  .btn.session-done {
+    height: 59px;
+    width: 60%;
+    font-weight: 300;
+    padding-top: 14px;
+    background-color: #FF4062;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px; }
 
 /*------------------------------------*    #FORM STYLING CREDIT: http://codepen.io/sevilayha/pen/IdGKH
 \*------------------------------------*/
@@ -226,7 +238,13 @@ input:focus ~ .highlight {
     background: transparent; } }
 
 .error {
-  visibility: hidden; }
+  visibility: hidden;
+  color: #FF4062;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 600;
+  float: right;
+  text-transform: uppercase; }
 
 .errorVisible {
   visibility: visible; }
@@ -288,12 +306,43 @@ section.home {
     font-size: 18px;
     font-weight: 600; }
 
+.in-session {
+  padding-top: 0; }
+  .in-session nav {
+    z-index: 1; }
+    .in-session nav p {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 0.3px;
+      padding-top: 22px; }
+      .in-session nav p.backtohome {
+        float: left;
+        margin-left: 20px; }
+    .in-session nav img {
+      width: 83px;
+      float: right;
+      margin: 0; }
+  .in-session .fa {
+    position: relative;
+    padding-top: 21px;
+    color: #FFFFFF;
+    float: left; }
+  .in-session .time-indication {
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 570px; }
+
 /*------------------------------------*    #VIDEO-BLOOB
 \*------------------------------------*/
 .videowrap {
   overflow: hidden;
   width: 412px;
-  height: 402px; }
+  height: 402px;
+  position: absolute;
+  margin-top: -580px; }
   .videowrap video {
     margin-left: -190px;
     margin-top: -21px; }
@@ -301,8 +350,12 @@ section.home {
 .videocontrols {
   z-index: 100;
   position: absolute;
-  margin-left: 143px;
-  margin-top: 190px; }
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: -400px;
+  text-align: center; }
   .videocontrols a {
     color: #FFFFFF; }
 
@@ -313,3 +366,6 @@ section.home {
   padding-top: 21px;
   color: #FFFFFF;
   margin-left: 21px; }
+
+/*------------------------------------*    #SESSION-HOME
+\*------------------------------------*/

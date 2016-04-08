@@ -7,13 +7,12 @@
 
 body {
     width: 414px;
-	height: 736px;
+	   height: auto;
     font-size: 21px;
     line-height: 1.5;
    	font-weight: 300;
    	color: $text-important;
-   	border: 1px solid black;
-   	margin: 50px auto 0 auto;
+   	margin: 0 auto;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
 }
 
@@ -521,9 +520,11 @@ section.home{
   position: absolute;
   margin-top: -580px;
 
-  video{
-    margin-left: -190px;
-    margin-top: -199px;
+  img{
+        margin-left: -190px;
+    margin-top: -39px;
+    width: 197%;
+    height: 120%;
   }
 }
 

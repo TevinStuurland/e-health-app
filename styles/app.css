@@ -6,13 +6,12 @@
 
 body {
   width: 414px;
-  height: 736px;
+  height: auto;
   font-size: 21px;
   line-height: 1.5;
   font-weight: 300;
   color: #001A27;
-  border: 1px solid black;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif, Lato, sans-serif; }
 
 h1,
@@ -420,9 +419,11 @@ section.home {
   height: 402px;
   position: absolute;
   margin-top: -580px; }
-  .videowrap video {
+  .videowrap img {
     margin-left: -190px;
-    margin-top: -199px; }
+    margin-top: -39px;
+    width: 197%;
+    height: 120%; }
 
 .videowrap-img {
   overflow: hidden;

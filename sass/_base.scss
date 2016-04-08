@@ -7,11 +7,12 @@
 
 body {
     width: 414px;
-	   height: auto;
+	 height: auto;
     font-size: 21px;
     line-height: 1.5;
    	font-weight: 300;
    	color: $text-important;
+    border: 1px solid $text;
    	margin: 0 auto;
     font-family:'Raleway', sans-serif, Lato, sans-serif;
 }

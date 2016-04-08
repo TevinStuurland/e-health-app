@@ -7,7 +7,7 @@
 
 body {
     width: 414px;
-	 height: auto;
+	  height: 736px;
     font-size: 21px;
     line-height: 1.5;
    	font-weight: 300;
@@ -68,6 +68,7 @@ section.loading{
 
     p{
         font-size: 1em;
+        padding: 2%;
 
         b{
             color: $highlight;
@@ -124,6 +125,7 @@ section.loading{
         color: lighten($text , 40%);
         text-decoration: none;
         cursor: pointer;
+
     }
 
     &.later2{
@@ -136,17 +138,6 @@ section.loading{
         padding-top: 14px;
     }
 
-    &.later3{
-        height: 59px;
-        width: 30%;
-        font-size: 18px;
-        color: lighten($text , 40%);
-        text-decoration: none;
-        cursor: pointer;
-        padding-top: 14px;
-        position: absolute;
-        margin-left: -370px;
-    }
 
     &.session{
         height: 59px;
@@ -167,26 +158,13 @@ section.loading{
         width: 65%;
         font-weight: 300;
         float: right;
-        font-size: 18px;
-        padding-top: 17px;
+        font-size: 0.7em;
+        padding-top: 1.3em;
         background-color: $highlight;
         color: $background;
         text-decoration: none;
         cursor: pointer;
         margin-top: -60px;
-      }
-
-      &.session3{
-        height: 59px;
-        width: 65%;
-        font-weight: 300;
-        float: right;
-        font-size: 18px;
-        padding-top: 17px;
-        background-color: $highlight;
-        color: $background;
-        text-decoration: none;
-        cursor: pointer;
       }
 
     &.session-home{
@@ -687,7 +665,7 @@ section.home-session{
     margin-top: 300px;
     padding: 35px;
     border: 1px solid #888;
-    width: 28%;
+    width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
